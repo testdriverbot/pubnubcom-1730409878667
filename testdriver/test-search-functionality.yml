@@ -1,0 +1,34 @@
+version: 4.0.78
+steps:
+  - prompt: Click on the search icon.
+    commands:
+      - command: hover-image
+        description: search icon in the webpage content
+        action: click
+  - prompt: Type "real-time messaging".
+    commands:
+      - command: hover-text
+        text: Search or ask anything
+        description: search bar
+        action: click
+      - command: type
+        text: real-time messaging
+  - prompt: Press Enter.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Press Enter.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Press Enter.
+    commands:
+      - command: hover-text
+        text: real-time messaging
+        description: search bar
+        action: click
+      - command: press-keys
+        keys:
+          - enter
