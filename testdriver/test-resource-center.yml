@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Resources" in the header.
+    commands:
+      - command: hover-text
+        text: Resources
+        description: link in the header
+        action: click
+  - prompt: >-
+      Assert that blogs, whitepapers, or eBooks are available for access.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: blogs, whitepapers, or eBooks are available for access
