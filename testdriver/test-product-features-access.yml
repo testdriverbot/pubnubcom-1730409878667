@@ -1,0 +1,20 @@
+version: 4.0.78
+steps:
+  - prompt: Hover over "Products" in the header.
+    commands:
+      - command: hover-text
+        text: Products
+        description: link in the header
+        action: hover
+  - prompt: Click on a specific product link.
+    commands:
+      - command: hover-text
+        text: Chat SDK
+        description: product link under Products
+        action: click
+  - prompt: >-
+      Assert that product details are displayed.  # Use the content of the file
+      from the environment
+    commands:
+      - command: assert
+        expect: Chat SDK is displayed with product details
