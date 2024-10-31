@@ -1,0 +1,20 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Solutions" in the header.
+    commands:
+      - command: hover-text
+        text: Solutions
+        description: link in the header
+        action: click
+  - prompt: Click on "Solutions" in the header.
+    commands:
+      - command: hover-text
+        text: Solutions
+        description: link in the header
+        action: click
+  - prompt: Click on "Solutions" in the header.
+    commands:
+      - command: hover-text
+        text: Solutions
+        description: link in the header
+        action: click
