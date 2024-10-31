@@ -1,0 +1,8 @@
+version: 4.0.78
+steps:
+  - prompt: >-
+      Assert the PubNub logo is visible on the homepage.  # Use the content of
+      the file from the environment
+    commands:
+      - command: wait-for-image
+        description: PubNub logo on the homepage
