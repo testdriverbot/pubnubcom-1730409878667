@@ -1,0 +1,46 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Login" in the header.
+    commands:
+      - command: hover-text
+        text: LOGIN
+        description: link in the header
+        action: click
+  - prompt: Enter valid test credentials.
+    commands:
+      - command: hover-text
+        text: Email address
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: TestPassword123
+  - prompt: >-
+      Assert successful login by checking the presence of a dashboard or user
+      profile.  # Use the content of the file from the environment
+    commands:
+      - command: hover-text
+        text: Email address
+        description: email input field
+        action: click
+  - prompt: >-
+      Assert successful login by checking the presence of a dashboard or user
+      profile.  # Use the content of the file from the environment
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: login button
+        action: click
+  - prompt: >-
+      Assert successful login by checking the presence of a dashboard or user
+      profile.  # Use the content of the file from the environment
+    commands:
+      - command: hover-text
+        text: LOG IN
+        description: login button
+        action: click
